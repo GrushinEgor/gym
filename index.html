@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="static/css/font-awesome.css" type="text/css">
+	<link rel="stylesheet" href="static/css/app.css" type="text/css">
+
+	<script src="static/js/angular.min.js"></script>
+
+</head>
+<body ng-controller="MainCtrl">
+
+
+	<div class="start-page" 
+	ng-hide="!startPageShowed" 
+	ng-class="{fade: startPageFading}" 
+	>
+	<img class="start-page__image" src="static/img/main-logo.png">
+
+	<div class="progress-bar">
+		<span class="progress-bar__bar" style="width: {{progress}}%"></span>
+	</div>
+	<button class="button button--m button--white button--center" ng-click="closeStartPage()">Продолжить</button>
+</div>
+
+<header class="header">
+	<div class="header__wrapper">
+		<div class="header__logo">
+			<div class="logo">
+				<a href="index.html">
+					<img src="static/img/logo.png" >
+				</a>
+			</div>
+			<div class="header__phone">
+				<span>8 (485) 150-22-98</span>
+				<span class="header__callback">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</span>
+			</div>
+		</div>
+		<div class="header__desc">
+			<h1 class="text--light">ФИТНЕС-КЛУБ</h1>
+			<h2 class="text--light">Новая форма. Новый ты!</h2>
+		</div>
+		<div class="header__corner">
+			<div class="corner corner--top-right"></div>
+		</div>
+	</div>
+</header>
+<nav class="nav">
+	<div class="nav__wrapper">
+		<ul class="nav__menu menu">
+			<li class="menu__item"><a href="trainers.html">trainers</a> </li>
+			<li class="menu__item"><a href="price.html">price</a> </li>
+			<li class="menu__item"><a href="">plan</a> </li>
+			<li class="menu__item"><a href="sunroom.html">sunroom</a> </li>
+			<li class="menu__item"><a href="bar.html">BAR</a> </li>
+			<li class="menu__item"><a href="">news</a> </li>
+			<li class="menu__item"><a href="reviews.html">reviews</a> </li>
+			<li class="menu__item"><a href="health.html">health</a> </li>
+			<li class="menu__item"><a href="contacts.html">contacts</a> </li>
+		</ul>
+	</div>
+</nav>
+
+
+
+<button class="cta button button--lg">КОНСУЛЬТАЦИЯ У ТРЕНЕРА</button>
+
+
+<section class="photos">
+	<div class="photos__item" ng-click="showGallery();">
+		<div class="overlay-img">
+			<img src="static/img/gym.png" alt="" class="overlay-img__img">
+			<div class="overlay-img__overlay"></div>	
+			<h2 class="overlay-img__text">ТРЕНАЖЕРНЫЙ ЗАЛ</h2>
+		</div>
+	</div>
+	<div class="photos__item" ng-click="showGallery();">
+		<div class="overlay-img">
+			<img src="static/img/solar.png" alt="" class="overlay-img__img">
+			<div class="overlay-img__overlay"></div>	
+			<h2 class="overlay-img__text">СОЛЯРИЙ</h2>
+		</div>
+	</div>
+</section>
+
+
+<section class="why">
+
+	<h2 class="text--center text--accent text--light">ПОЧЕМУ ЛЮДИ ВЫБИРАЮТ ИМЕННО НАС</h2>
+	<div class="advantages">
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--parking ic--center"></i></div>
+				<div class="advantage__header">ОХРАНЯЕМАЯ ПАРКОВКА</div>
+				<div class="advantage__text">МЫ ЗАБОТИМСЯ О<br>БЕЗОПАСНОСТИ ВАШЕГО<br>АВТОМОБИЛЯ</div>
+			</div>
+		</div>
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--man ic--center"></i></div>
+				<div class="advantage__header">ВЫСОКОКВАЛИФИ-<br>ЦИРОВАННЫЕ<br> ТРЕНЕРЫ</div>
+				<div class="advantage__text">ТОЛЬКО ПЕРВОКЛАСС-<br>НЫЕ СПЕЦИАЛИСТЫ</div>
+			</div>
+		</div>
+
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--trainers ic--center"></i></div>
+				<div class="advantage__header">
+					НОВЕЙШИЕ<br>ТРЕНАЖЁРЫ
+				</div>
+				<div class="advantage__text">
+					САМОЕ СОВРЕМЕННОЕ<br>ОБОРУДОВАНИЕ<br>ДЛЯ ВАС
+				</div>
+			</div>
+		</div>
+
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--bar ic--center"></i></div>
+				<div class="advantage__header">ФИТНЕС<br>БАР</div>
+				<div class="advantage__text">ЗДОРОВОЕ И<br>ВКУСНОЕ ПИТАНИЕ<br>ДЛЯ ВАС</div>
+			</div>
+		</div>
+
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--programms ic--center"></i></div>
+				<div class="advantage__header">ОЗДОРОВИТЕЛЬНЫЕ<br>ПРОГРАММЫ</div>
+				<div class="advantage__text">
+					ИНДИВИДУАЛЬНЫЕ<br>ОЗДОРОВИТЕЛЬНЫЕ<br>ПРОГРАММЫ
+				</div>
+			</div>
+		</div>
+
+		<div class="advantages__item">
+			<div class="advantage">
+				<div class="advantage__icon"><i class="ic--thumbs-up ic--center"></i></div>
+				<div class="advantage__header">ПРОСТОРНЫЙ<br>ЗАЛ</div>
+				<div class="advantage__text">У НАС МНОГО,<br>МНОГО МЕСТА<br>ДЛЯ ВСЕХ</div>
+			</div>
+		</div>
+
+
+	</div>
+</section>
+
+
+<section class="some-text">
+	<h2 class="text--center text--accent text--light">ПОЧЕМУ ЛЮДИ ВЫБИРАЮТ ИМЕННО НАС</h2>
+	<p class="some-text__text">
+		Москва. Зима. Ночь. В свете фонарей крупными хлопьями медленно ложится снег. Раздаётся звон разбитого стекла!!!
+		Пионер Петя стремглав убегает от дворника, который гонится за ним в валенках, тулупе и с метлой наперевес; убегает и думает:
+		-- И нафиг мне всё это надо?!! Этот имидж уличного мальчишки, эти битые стёкла, этот футбол посреди зимы... Сидел бы дома! Уроки-то сделал! 
+		Пил бы тихонько ароматный чай, читал бы моего любимого Эрнеста Хэмингуэя и размышлял бы о смысле жизни...
+
+		Америка. Ки-Уэст. Штат Флорида. Жара. Эрнест Хэмингуэй, изнемогая от жары, одной рукой устало утирает пот со лба, другой отодвигает от себя 
+		пишущую машинку и думает:
+		-- И нафиг мне всё это надо?!! Эти тупые янки, эта жара, москиты, эта грёбаная писанина!!! Сидел бы щас в Париже, у моего лучшего друга 
+		Андрэ Моруа, попивали бы вечерний пунш, рядом лежала бы прелестная куртизанка... Поплёвывали бы на головы беспечным парижанам, 
+		любовались бы на Эйфелеву башню и размышляли бы о смысле жизни...
+
+		Париж. Вечер. Прохладно. Андрэ Моруа, держа бокал бокал с пуншем, походя обнимает прелестную куртизанку, с неподдельной усталостью 
+		смотрит в окно на Эйфелеву башню и думает:
+		-- И нафиг мне всё это надо? Эти слащавые парижане, эта потная баба, это вонючее пойло, эта башня, с которой вечно плюют на голову... 
+		Сидел бы щас в заснеженной Московии у моего лучшего друга Владимира Набокова; пили бы холодную русскую водку из запотевшего графина, 
+		закусывали бы чёрным хлебушком со свежей икоркой и размышляли бы о смысле жизни...
+
+		Москва. Зима. Ночь. В свете фонарей крупными хлопьями медленно ложится снег. Владимир Набоков в шапке-ушанке, тулупе, валенках и с 
+		метлой наперевес гонится за пионером Петей и думает: 
+		ПОЙМАЮ -- УББЬЮ!!!
+	</p>
+</section>
+
+
+<section class="club-news-section">
+
+	<h2 class="text--center text--accent text--light">ЖИЗНЬ КЛУБА  - НОВОСТИ И АКЦИИ</h2>
+	<div class="club-news">
+		<div class="club-news__item">
+			<div class="advantage">
+				<div class="advantage__date">30.12.2015</div>
+				<div class="advantage__header">ЗАГОЛОВОК НОВОСТИ НОМЕР ОДИН</div>
+				<div class="advantage__text">
+					Краткое вступительное описание о самом<br>
+					важноми интересном.Или не самом важном,<br>
+					но тоже не менее интересном.
+				</div>
+				<div class="advantage__button">
+					<button class="button">УЗНАТЬ ПОДРОБНОСТИ</button>
+				</div>
+			</div>
+		</div>
+		<div class="club-news__item">
+			<div class="advantage">
+				<div class="advantage__date">30.12.2015</div>
+				<div class="advantage__header">ЗАГОЛОВОК НОВОСТИ НОМЕР ОДИН</div>
+				<div class="advantage__text">
+					Краткое вступительное описание о самом<br>
+					важноми интересном.Или не самом важном,<br>
+					но тоже не менее интересном.
+				</div>
+				<div class="advantage__button">
+					<button class="button">УЗНАТЬ ПОДРОБНОСТИ</button>
+				</div>
+			</div>
+		</div>
+		<div class="club-news__item">
+			<div class="advantage">
+				<div class="advantage__date">30.12.2015</div>
+				<div class="advantage__header">ЗАГОЛОВОК НОВОСТИ НОМЕР ОДИН</div>
+				<div class="advantage__text">
+					Краткое вступительное описание о самом<br>
+					важноми интересном.Или не самом важном,<br>
+					но тоже не менее интересном.
+				</div>
+				<div class="advantage__button">
+					<button class="button">УЗНАТЬ ПОДРОБНОСТИ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<nav class="nav ">
+	<div class="nav__wrapper nav__wrapper--sm">
+		<ul class="nav__menu menu">
+			<li class="menu__item"><a href="trainers.html">trainers</a> </li>
+			<li class="menu__item"><a href="price.html">price</a> </li>
+			<li class="menu__item"><a href="">plan</a> </li>
+			<li class="menu__item"><a href="sunroom.html">sunroom</a> </li>
+			<li class="menu__item"><a href="bar.html">BAR</a> </li>
+			<li class="menu__item"><a href="">news</a> </li>
+			<li class="menu__item"><a href="reviews.html">reviews</a> </li>
+			<li class="menu__item"><a href="health.html">health</a> </li>
+			<li class="menu__item"><a href="" ng-click="showPartnersGallery();">partners</a> </li>
+			<li class="menu__item"><a href="contacts.html">contacts</a> </li>
+		</ul>
+	</div>
+</nav>
+<footer class="footer">
+	<div class="footer__wrapper">
+		<p>
+			Дмитровское шоссе, д.157, стр.5, эт.1, офис 5111<br>
+			тел.: 8(485)150-22-98<br>
+			почта: info@KAM-GYM.ru<br>
+			<br>
+			© 2016 - KAM GYM
+		</p>
+	</div>
+</footer>
+<script src="static/js/jquery-1.10.2.min.js"></script>
+<script src="static/js/ui-bootstrap-custom-1.0.3.min.js"></script>
+<script src="static/js/ui-bootstrap-custom-tpls-1.0.3.min.js"></script>
+<script src="static/js/app.js"></script>
+
+
+
+<script type="text/ng-template" id="gallery-dialog-tmpl">
+	<div class="main-dialog">
+
+	<gallery images="images"></gallery>
+
+</div>
+</script>
+
+</body>
+</html>

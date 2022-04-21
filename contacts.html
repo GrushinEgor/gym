@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="static/css/font-awesome.css" type="text/css">
+	<link rel="stylesheet" href="static/css/app.css" type="text/css">
+
+	<script src="static/js/angular.min.js"></script>
+
+</head>
+<body ng-controller="MainCtrl">
+
+
+
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__logo">
+				<div class="logo">
+					<a href="index.html">
+						<img src="static/img/logo.png" >
+					</a>
+				</div>
+				<div class="header__phone">
+					<span>8 (485) 150-22-98</span>
+					<span class="header__callback">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</span>
+				</div>
+			</div>
+			<div class="header__desc">
+				<h1 class="text--light">ФИТНЕС-КЛУБ</h1>
+				<h2 class="text--light">Новая форма. Новый ты!</h2>
+			</div>
+			<div class="header__corner">
+				<div class="corner corner--top-right"></div>
+			</div>
+		</div>
+	</header>
+	<nav class="nav">
+		<div class="nav__wrapper">
+			<ul class="nav__menu menu">
+				<li class="menu__item"><a href="trainers.html">trainers</a> </li>
+				<li class="menu__item"><a href="price.html">price</a> </li>
+				<li class="menu__item"><a href="">plan</a> </li>
+				<li class="menu__item"><a href="sunroom.html">sunroom</a> </li>
+				<li class="menu__item"><a href="bar.html">BAR</a> </li>
+				<li class="menu__item"><a href="">news</a> </li>
+				<li class="menu__item"><a href="reviews.html">reviews</a> </li>
+				<li class="menu__item"><a href="health.html">health</a> </li>
+				<li class="menu__item"><a href="contacts.html">contacts</a> </li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<div class="page">
+		<div class="page__corner-top-left">
+			<div class="corner corner--top-left"></div>
+		</div>
+		<div class="page__corner-top-right">
+			<div class="corner corner--top-right"></div>
+		</div>
+		<div class="page__corner-bottom-left">
+			<div class="corner corner--bottom-left"></div>
+		</div>
+		<div class="page__corner-bottom-right">
+			<div class="corner corner--bottom-right"></div>
+		</div>
+		<div class="page__title">
+			<h1 class="text--light">CONTACTS</h1>
+			<h2 class="text--light">gym</h2>
+		</div>
+
+		<div class="page__content">
+			<div class="contacts">
+				
+				<div class="contacts__map">
+					<div class="map">
+						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=nYzosB0vLGx0maREiQub9BmEzHXelQH6&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
+					</div>
+				</div>
+				<div class="contacts__text">
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<i class="fa fa-map-marker"></i>
+							<span class="contact-list__item-text">Дмитровское шоссе, д.157, стр.5, эт.1,<br>
+								офис 5111</span>
+							</li>
+							<li class="contact-list__item">
+								<i class="fa fa-phone"></i>
+								<span class="contact-list__item-text">8 (485) 150-22-98</span>
+							</li>
+							<li class="contact-list__item">
+								<i class="fa fa-envelope"></i>
+								<span class="contact-list__item-text">info@KAM-GYM.ru</span>
+							</li>
+							<li class="contact-list__item">
+
+								<button class="button button--m">Связаться с нами</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<nav class="nav ">
+			<div class="nav__wrapper nav__wrapper--sm">
+				<ul class="nav__menu menu">
+					<li class="menu__item"><a href="trainers.html">trainers</a> </li>
+					<li class="menu__item"><a href="price.html">price</a> </li>
+					<li class="menu__item"><a href="">plan</a> </li>
+					<li class="menu__item"><a href="sunroom.html">sunroom</a> </li>
+					<li class="menu__item"><a href="bar.html">BAR</a> </li>
+					<li class="menu__item"><a href="">news</a> </li>
+					<li class="menu__item"><a href="reviews.html">reviews</a> </li>
+					<li class="menu__item"><a href="health.html">health</a> </li>
+					<li class="menu__item"><a href="" ng-click="showPartnersGallery();">partners</a> </li>
+					<li class="menu__item"><a href="contacts.html">contacts</a> </li>
+				</ul>
+			</div>
+		</nav>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<p>
+					Дмитровское шоссе, д.157, стр.5, эт.1, офис 5111<br>
+					тел.: 8(485)150-22-98<br>
+					почта: info@KAM-GYM.ru<br>
+					<br>
+					© 2016 - KAM GYM
+				</p>
+			</div>
+		</footer>
+		<script src="static/js/jquery-1.10.2.min.js"></script>
+		<script src="static/js/ui-bootstrap-custom-1.0.3.min.js"></script>
+		<script src="static/js/ui-bootstrap-custom-tpls-1.0.3.min.js"></script>
+		<script src="static/js/app.js"></script>
+
+
+	</body>
+	</html>
