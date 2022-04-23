@@ -100,7 +100,7 @@ app
 		restrict: 'E',
 		template: 	'<div class="gallery">'+
 		'<div class="gallery__viewport">'+
-		'<img ng-src="{{currentImage.src}}" class="gallery__img">'+
+		'<img ng-src="{{currentImage.src}}" class="gallery__img" ng-click="next();">'+
 		'</div>'+
 		'<div class="gallery__buttons">'+
 		'<div class="gallery__button-prev" ng-click="prev();">'+
@@ -128,6 +128,7 @@ app
 				}
 
 			};
+
 
 			scope.$on('$destroy', function() {
 				$document.off('keydown', keydown);
