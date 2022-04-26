@@ -67,7 +67,7 @@ a {
   text-decoration: none;
   color: #000; }
   a:active, a:focus, a:hover {
-    color: #fff;
+    color: #000;
     text-decoration: none; }
 
 b, strong {
@@ -296,19 +296,19 @@ html, body {
     content: "";
     display: table; }
   .menu__item {
-    float: left;
     font-size: 24px;
     padding-right: 16px;
-    margin-left: 16px;
-    border-right: 2px solid #000; }
+    padding-left: 16px;
+    border: 2px solid transparent;
+    border-right-color: #000;
+    cursor: pointer;
+    line-height: 1; }
+    .menu__item:hover, .menu__item.active {
+      border-color: #000; }
+      .menu__item:hover:last-child, .menu__item.active:last-child {
+        border-right-color: #000; }
     .menu__item:last-child {
-      border-right: none; }
-    .menu__item > a {
-      padding: 2px 4px;
-      border: 2px solid transparent; }
-      .menu__item > a:hover {
-        border-color: #000;
-        color: #000; }
+      border-right-color: transparent; }
 
 .advantage {
   text-align: center; }
