@@ -303,7 +303,8 @@ html, body {
     border: 2px solid transparent;
     border-right-color: #000;
     cursor: pointer;
-    line-height: 1; }
+    line-height: 1;
+    outline: none; }
     .menu__item:hover, .menu__item.active {
       border-color: #000; }
       .menu__item:hover:last-child, .menu__item.active:last-child {
