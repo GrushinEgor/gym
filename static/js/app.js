@@ -26,6 +26,7 @@
 					$scope.progress += 10;
 					if ($scope.progress >= 100){
 						$scope.progress = 100;
+						$scope.closeStartPage();
 					}
 					if ($scope.progress < 100) {
 						$timeout(ticker, 100)
