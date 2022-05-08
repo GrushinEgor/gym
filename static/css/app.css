@@ -357,6 +357,10 @@ html, body {
     clear: both;
     content: "";
     display: table; }
+  .main-dialog--bg {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px; }
 
 .overlay-img {
   position: relative;
@@ -513,6 +517,21 @@ html, body {
     right: 85px;
     bottom: 75px; }
 
+.form::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.form__field {
+  display: block;
+  margin-bottom: 20px;
+  color: #b0a290;
+  background: #000;
+  outline: none;
+  border: none;
+  border: 1px solid #b0a290;
+  width: 100%; }
+
 .map {
   -moz-border-radius: 30px 30px 30px 30px;
   /* Firefox */
@@ -611,6 +630,7 @@ html, body {
   .header__callback {
     display: block;
     font-size: 12px;
+    outline: none;
     cursor: pointer; }
     .header__callback:hover {
       text-decoration: underline; }

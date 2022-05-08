@@ -75,7 +75,18 @@
 					}
 				}
 			};
+			$scope.callbackDialog = {
+				animation: true,
+				templateUrl: 'callback-dialog-tmpl',
+				controller: 'CallbackDialogCtrl',
+				size: "sm"
+			};
 
+			
+
+			$scope.showCallback = function () {
+				$uibModal.open($scope.callbackDialog);
+			}
 
 			$scope.showGallery = function () {
 				$uibModal.open($scope.galleryDialog);
@@ -84,6 +95,7 @@
 				$uibModal.open($scope.partnersGalleryDialog);
 			}
 		}]);
+
 app.controller('GalleryDialogCtrl', [ 
 	'$scope', 
 	'$http',
@@ -91,6 +103,14 @@ app.controller('GalleryDialogCtrl', [
 	'images',
 	function ($scope, $http, $uibModalInstance, images) {
 		$scope.images = images;
+
+	}]);
+
+app.controller('CallbackDialogCtrl', [ 
+	'$scope', 
+	'$http',
+	'$uibModalInstance',
+	function ($scope, $http, $uibModalInstance) {
 
 	}]);
 

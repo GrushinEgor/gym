@@ -17,7 +17,7 @@
 	<div class="start-page" 
 	ng-hide="!startPageShowed" 
 	ng-class="{fade: startPageFading}" 
-	 ng-click="closeStartPage()"
+	ng-click="closeStartPage()"
 	>
 	<img class="start-page__image" src="static/img/main-logo.png">
 
@@ -37,7 +37,7 @@
 			</div>
 			<div class="header__phone">
 				<span>8 (485) 150-22-98</span>
-				<span class="header__callback">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</span>
+				<span class="header__callback" ng-click="showCallback();">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</span>
 			</div>
 		</div>
 		<div class="header__desc">
@@ -49,6 +49,7 @@
 		</div>
 	</div>
 </header>
+
 <nav class="nav">
 	<div class="nav__wrapper">
 
@@ -235,19 +236,19 @@
 <nav class="nav ">
 	<div class="nav__wrapper nav__wrapper--sm">
 		<table class="nav__menu menu">
-				<tr>
-					<td class="menu__item"><a href="trainers.html">trainers</a> </td>
-					<td class="menu__item"><a href="price.html">price</a> </td>
-					<td class="menu__item"><a href="">plan</a></td>
-					<td class="menu__item"><a href="sunroom.html">sunroom</a> </td>
-					<td class="menu__item"><a href="bar.html">BAR</a> </td>
-					<td class="menu__item"><a href="">news</a> </td>
-					<td class="menu__item"><a href="reviews.html">reviews</a></td>
-					<td class="menu__item"><a href="health.html">health</a></td>
-					<td class="menu__item"><a href="" ng-click="showPartnersGallery();">partners</a> </td>
-					<td class="menu__item"><a href="contacts.html">contacts</a></td>
-				</tr>
-			</table>
+			<tr>
+				<td class="menu__item"><a href="trainers.html">trainers</a> </td>
+				<td class="menu__item"><a href="price.html">price</a> </td>
+				<td class="menu__item"><a href="">plan</a></td>
+				<td class="menu__item"><a href="sunroom.html">sunroom</a> </td>
+				<td class="menu__item"><a href="bar.html">BAR</a> </td>
+				<td class="menu__item"><a href="">news</a> </td>
+				<td class="menu__item"><a href="reviews.html">reviews</a></td>
+				<td class="menu__item"><a href="health.html">health</a></td>
+				<td class="menu__item"><a href="" ng-click="showPartnersGallery();">partners</a> </td>
+				<td class="menu__item"><a href="contacts.html">contacts</a></td>
+			</tr>
+		</table>
 
 	</div>
 </nav>
@@ -262,19 +263,30 @@
 		</p>
 	</div>
 </footer>
+
 <script src="static/js/jquery-1.10.2.min.js"></script>
 <script src="static/js/ui-bootstrap-custom-1.0.3.min.js"></script>
 <script src="static/js/ui-bootstrap-custom-tpls-1.0.3.min.js"></script>
 <script src="static/js/app.js"></script>
 
 
+<script type="text/ng-template" id="callback-dialog-tmpl">
+	<div class="main-dialog main-dialog--bg">
+
+<form class="form">
+	<input type="text" class="form__field" placeholder="Имя">
+	<input type="text" class="form__field" placeholder="Телефон">
+	<button class="button button--m button--center">ОТПРАВИТЬ</button>
+</form>
+	</div>
+</script>
 
 <script type="text/ng-template" id="gallery-dialog-tmpl">
 	<div class="main-dialog">
 
-	<gallery images="images"></gallery>
+		<gallery images="images"></gallery>
 
-</div>
+	</div>
 </script>
 
 </body>
