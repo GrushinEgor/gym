@@ -530,18 +530,18 @@ html, body {
 .form__field {
   display: block;
   margin-bottom: 20px;
-  color: #b0a290;
-  background: #000;
+  color: #000;
+  background: #b0a290;
   outline: none;
   border: none;
   border: 1px solid #b0a290;
   width: 100%; }
 
 input::-webkit-input-placeholder {
-  color: #b0a290; }
+  color: #000; }
 
 input:-moz-placeholder {
-  color: #b0a290; }
+  color: #000; }
 
 .map {
   -moz-border-radius: 30px 30px 30px 30px;
