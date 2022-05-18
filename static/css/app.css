@@ -232,6 +232,11 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+.bg3 {
+  background: #000 url("../img/bg3.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
 .float--left {
   float: left; }
 
