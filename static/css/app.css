@@ -79,7 +79,7 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-html, body {
+body {
   background: #000 url("../img/bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed; }
